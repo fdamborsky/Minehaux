@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/landingpage.css">
+    <link rel="shortcut icon" href="../static/resources/favicon.ico" type="image/x-icon">
+    <title>Welcome to the Minehaux</title>
+</head>
+<body>
+    <div class="loader"></div>
+
+    <header>
+        <a href="{{ url_for('home') }}"><h1>minehaux</h1></a>
+        <nav>
+            <ul>
+                <li><a href="#landing-page">Home</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#why_choose_us">Why us?</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#ourpartners">Contact</a></li>
+                <li><a href="{{ url_for('logout') }}"><img src="../static/resources/home/lock.png" alt="">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="landing-page">
+        <div id="container">
+            <h1>find your dreAm home</h1>
+            <p>From low as 10$ per day with limited time offer discounts</p>
+
+            <div class="toggle-buttons">
+                <button class="toggle-button active" id="buyButton" onclick="toggleButton('buy')">
+                    <img src="../static/resources/home/Buy-active.svg" alt="Buy" id="buyImage">
+                </button>
+                <button class="toggle-button" id="rentButton" onclick="toggleButton('rent')">
+                    <img src="../static/resources/home/Rent-unactive.svg" alt="Rent" id="rentImage">
+                </button>
+            </div>
+
+            <a href="" id="showMeLink">
+                <div class="search">
+                <img src="../static/resources/home/spyglass.png" alt="">
+                <h3> Show me !</h3>
+            </div></a>
+        </div>
+
+        <a href="#featured">
+        <div id="types">
+            <img src="../static/resources/home/scroll_down.svg" alt="">
+        </div></a>
+
+        
+    </div>
+
+    <div id="featured">
+        <div id="title">
+            <h1>feAtured properties</h1>
+            <h2>Handpicked properties by our team.</h2>
+        </div>
+        
+
+        <div id="boxes">
+            <div class="box 1">
+                <img src="../static/resources/home/house1.svg" alt="">
+
+                <div class="box_text">
+                    <h1>Apartment</h1>
+                    <h2>Renovated Apartment</h2>
+                    <div class="compass">
+                        <img src="../static/resources/home/compass.webp" alt="">
+                        <h3>250, 70, -150</h3>
+                    </div>
+                    <div class="rooms">
+                        <h4>Beds: 4</h4>
+                        <h4>Bath: 2</h4>
+                        <h4>Chests: 4</h4>
+                    </div>  
+                </div>
+
+                <div class="author">
+                    <div class="name1">
+                        <img src="../static/resources/home/majnkrafák.svg" alt="">
+                        <h1>Majnkrafák</h1>
+                    </div>
+                    <h1>2 years ago</h1>
+                </div>
+            </div>
+
+            <div class="box 2">
+                <img src="../static/resources/home/house2.svg" alt="">
+
+                <div class="box_text">
+                    <h1>villA</h1>
+                    <h2>Georgeous Villa Bay View</h2>
+                    <div class="compass">
+                        <img src="../static/resources/home/compass.webp" alt="">
+                        <h3>320, 65, -210</h3>
+                    </div>
+                    <div class="rooms">
+                        <h4>Beds: 6</h4>
+                        <h4>Bath: 2</h4>
+                        <h4>Chests: 8</h4>
+                    </div>  
+                </div>
+
+                <div class="author">
+                    <div class="name2">
+                        <img src="../static/resources/home/gejmr.svg" alt="">
+                        <h1>Gejmr</h1>
+                    </div>
+                    <h1>5 years ago</h1>
+                </div>
+            </div>
+
+            <div class="box 3">
+                <img src="../static/resources/home/house3.svg" alt="">
+                <div class="box_text">
+                    <h1>Cottage</h1>
+                    <h2>Oakstone Lodge</h2>
+                    <div class="compass">
+                        <img src="../static/resources/home/compass.webp" alt="">
+                        <h3>120, 45, -130</h3>
+                    </div>
+                    <div class="rooms">
+                        <h4>Beds: 4</h4>
+                        <h4>Bath: 2</h4>
+                        <h4>Chests: 6</h4>
+                    </div>  
+                </div>
+
+                <div class="author">
+                    <div class="name3">
+                        <img src="../static/resources/home/jirkakral.svg" alt="">
+                        <h1>Jirka Král</h1>
+                    </div>
+                    <h1>5 months ago</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="properties">
+        <img class="baratheon" src="../static/resources/home/baratheon.png" alt="">
+        <img class="targaryen" src="../static/resources/home/targaryen.png" alt="">
+        <div id="properties_title">
+            <h1>find properties in the westeros</h1>
+            <h2>Discover Your Ideal Home Across Multiple Locations</h2>
+        </div>
+        <div id="cities">
+            <div id="top">
+                <a href="{{ url_for('westerlands') }}">
+                <div class="image_container">
+                    <div class="text-box">
+                        <h1>Westerlands</h1>
+                        <h2>5 Properties</h2>
+                    </div>
+                    <img class="first-image" src="../static/resources/home/Lannisport.png" alt="">
+                </div></a>
+                
+                <div class="image_container">
+                    <div class="text-box">
+                        <h1>Crownlands</h1>
+                        <h2>12 Properties</h2>
+                    </div>
+                    <img src="../static/resources/home/kings landing.png" alt="">
+                </div>
+            </div>
+            <div id="bottom">
+                <div class="image_container">
+                    <div class="text-box">
+                        <h1>Vale</h1>
+                        <h2>3 Properties</h2>
+                    </div>
+                    <img class="first-image" src="../static/resources/home/Gullstown.png" alt="">
+                </div>
+
+                <div class="image_container">
+                    <div class="text-box">
+                        <h1>North</h1>
+                        <h2>7 Properties</h2>
+                    </div>
+                    <img src="../static/resources/home/white_harbour.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="why_choose_us">
+        <div id="title">
+            <h1>why choose us</h1>
+            <h2>We provide full service at every step</h2>
+        </div>
+
+        <div id="boxes_2">
+            <div class="boxx one">
+                <img src="../static/resources/home/heart.png" alt="">
+                <h1>trusted by thousands</h1>
+                <h2>Our service has earned the trust 
+                    of thousands, consistently delivering quality
+                    and reliability to satisfied clients worldwide.
+                </h2>
+            </div>
+
+            <div class="boxx two">
+                <img src="../static/resources/home/gold.webp" alt="">
+                <h1>Range of properties</h1>
+                <h2>Explore an extensive selection of properties, 
+                    offering diverse options to match any lifestyle 
+                    or investment need.
+                </h2>
+            </div>
+            <div class="boxx three">
+                <img src="../static/resources/home/bottle.webp" alt="">
+                <h1>FInancing made easy</h1>
+                <h2>We simplify the financing process, offering 
+                    flexible, tailored solutions to make property 
+                    ownership accessible and stress-free.
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonial">
+        <div id="testimonial_title">
+            <h1>testimonial</h1>
+            <h2>Thousands trust our exceptional service,</h2>
+        </div>
+        <div id="testimonial_boxes">
+            <div class="testimonial_box TBOX1">
+                <img src="../static/resources/home/Savanna_Villager_Base.png" alt="">
+                <h1>oliver</h1>
+                <h2>"Hrrmm"</h2>
+            </div>
+
+            <div class="testimonial_box TBOX2">
+                <img src="../static/resources/home/Desert_Villager_Base.png" alt="">
+                <h1>elric</h1>
+                <h2>"Hrmm"</h2>
+            </div>
+
+            <div class="testimonial_box TBOX3">
+                <img src="../static/resources/home/Snowy_Villager_Base.png" alt="">
+                <h1>rufus</h1>
+                <h2>"Hmm"</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="article">
+        <div id="article_title">
+            <h1>Article tips</h1>
+            <h2>Craft compelling, clear, and engaging articles</h2>
+        </div>
+        
+        <div id="article_boxes">
+            <a href="{{ url_for('article', index=0) }}">
+            <div class="article_box">
+                <img src="../static/resources/home/exploring.png" alt="">
+                <div class="article_text"><h1>exploring new biomes</h1>
+                <h2>Sunset Adventures: Discovering New Lands in Minecraft</h2></div>
+                <div class="article_author">
+                    <div class="article_name">
+                        <img src="../static/resources/home/majnkrafák.svg" alt="">
+                        <h1>Majnkrafák</h1>
+                    </div>
+                    <h2>2 years ago</h2>
+                </div>
+            </div></a>
+
+            <a href="{{ url_for('article', index=1) }}">
+            <div class="article_box">
+                <div class="article_box">
+                    <img src="../static/resources/home/interacting.png" alt="">
+                    <div class="article_text">
+                    <h1>interacting with wildlife</h1>
+                    <h2>Goat Whisperer: Taming and Caring 
+                        for Animals in Minecraft</h2></div>
+                    <div class="article_author">
+                        <div class="article_name">
+                            <img src="../static/resources/home/gejmr.svg" alt="">
+                            <h1>Gejmr</h1>
+                        </div>
+                        <h2>3 years ago</h2>
+                    </div>
+                </div>
+            </div></a>
+
+            <a href="{{ url_for('article', index=2) }}">
+            <div class="article_box">
+                <div class="article_box">
+                    <img src="../static/resources/home/nighttime.png" alt="">
+                    <div class="article_text">
+                    <h1>nighttime survival strategies</h1>
+                    <h2>Surviving the Night: Strategies for Nighttime in Minecraft</h2></div>
+                    <div class="article_author author3">
+                        <div class="article_name ">
+                            <img src="../static/resources/home/jirkakral.svg" alt="">
+                            <h1>Jirka Král</h1>
+                        </div>
+                        <h2>3 months ago</h2>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+    </div>
+
+    <div id="ourpartners">
+        <h1>Our partners</h1>
+        <h2>We only work with the best companies around the globe</h2>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="../static/resources/home/logos/AriaCreations.webp" alt="">
+                <img src="../static/resources/home/logos/aternos.webp" alt="">
+                <img src="../static/resources/home/logos/build_it.webp" alt="">
+                <img src="../static/resources/home/logos/cracked_cubes.webp" alt="">
+                <img src="../static/resources/home/logos/iris.webp" alt="">
+                <img src="../static/resources/home/logos/kingcube.webp" alt="">
+                <img src="../static/resources/home/logos/Mojang.webp" alt="">
+                <img src="../static/resources/home/logos/sodium.webp" alt="">
+            </div>
+            <div class="logos-slide">
+                <img src="../static/resources/home/logos/AriaCreations.webp" alt="">
+                <img src="../static/resources/home/logos/aternos.webp" alt="">
+                <img src="../static/resources/home/logos/build_it.webp" alt="">
+                <img src="../static/resources/home/logos/cracked_cubes.webp" alt="">
+                <img src="../static/resources/home/logos/iris.webp" alt="">
+                <img src="../static/resources/home/logos/kingcube.webp" alt="">
+                <img src="../static/resources/home/logos/Mojang.webp" alt="">
+                <img src="../static/resources/home/logos/sodium.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_logo">
+            <img src="../static/resources/home/logos.png" alt="">
+            <h1>@ 2024 Mojang AB. TM Microsoft Corporation.</h1>
+            <a href="https://www.minecraft.net/en-us/usage-guidelines" target="_blank">Minecraft Usage Guidelines</a>
+        </div>
+
+        <div id="links">
+            <div id="left">
+                <h1>GAMES</h1>
+                <a href="https://www.minecraft.net/en-us/about-minecraft">Minecraft</a>
+                <a href="https://www.minecraft.net/en-us/about-dungeons">Minecraft Dungeons</a>
+                <a href="https://www.minecraft.net/en-us/about-legends">Minecraft Legends</a>
+                <a href="https://education.minecraft.net/">Minecraft Education</a>
+                <h1>community</h1>
+                <a href="https://www.minecraft.net/en-us/community">Community</a>
+                <a href="https://www.minecraft.net/en-us/creator">Creator Learning Portal</a>
+                <a href="https://www.minecraft.net/mojang-careers">Mojang Studios Careers</a>
+                <a href="https://minecraft.net/build-a-better-world">Build a Better World</a>
+            </div>
+            <div id="right">
+                <h1>shop</h1>
+                <a href="https://www.minecraft.net/en-us/catalog">Marketplace</a>
+                <a href="https://shop.minecraft.net/">Minecraft Shop</a>
+                <h1>support</h1>
+                <a href="https://www.minecraft.net/minecraft-tips-for-beginners">Tips for Beginners</a>
+                <a href="https://help.minecraft.net/">Help</a>
+                <a href="https://feedback.minecraft.net/">Feedback</a>
+                <a href="https://www.minecraft.net/en-us/sitemap">Site Map</a>
+                <a href="https://www.minecraft.net/en-us/download">Download</a>
+                <a href="https://help.minecraft.net/hc/en-us/articles/4408904068621-Feedback-and-Fan-Mail">Contact us</a>
+                <h1>account</h1>
+                <a href="https://www.minecraft.net/profile">Profile</a>
+                <a href="https://www.minecraft.net/en-us/redeem">Redeem</a>
+            </div>
+        </div>
+        
+        <div id="warning">
+            <img src="../static/resources/home/warning.png" alt="">
+        </div>
+    </footer>
+
+<script src="../static/script.js" defer></script>
+</body>
+</html>

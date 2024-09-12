@@ -1,0 +1,213 @@
+@font-face {
+    font-family: ProximaNova;
+    src: url("resources/fonts/ProximaNova.otf");
+}
+
+@font-face {
+    font-family: MinecraftRegular;
+    src: url("resources/fonts/MinecraftRegular.otf");
+}
+
+@font-face {
+    font-family: MinecraftBold;
+    src: url("resources/fonts/Minecrafter.Alt.ttf");
+}
+
+@font-face {
+    font-family: MinecraftReg;
+    src: url("resources/fonts/Minecrafter.Reg.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #171615;
+}
+
+/**********HEADER**********/
+/**********HEADER**********/
+/**********HEADER**********/
+
+header {
+    height: 80px;
+    background-color: #262423;
+    filter: drop-shadow(0 0 0.2rem black);
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    outline: none;
+    z-index: 998;
+}
+
+header h1 {
+    display: inline-block;
+    font-family: MinecraftBold;
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: none;
+    outline: none;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    outline: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: MinecraftRegular;
+    font-size: 20px;
+    outline: none;
+}
+
+header nav ul li a img{
+    height: 20px;
+    padding-right: 10px;
+    outline: none;
+}
+
+
+/***MAIN***/
+main {
+    text-align: center;
+}
+
+main img {
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+article {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#text {
+    margin-top: 30px;
+}
+
+#text h1{
+    font-family: MinecraftReg;
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: .1rem;
+}
+
+#text h2 {
+    font-family: Minecraft Regular;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #fff;
+    text-align: left;
+}
+
+
+
+
+
+/**********FOOTER**********/
+/**********FOOTER**********/
+/**********FOOTER**********/
+
+footer {
+    height: 550px;
+    width: 100%;
+    background-color: #111111;
+
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#footer_logo{
+    width: 30%;
+    height: 80%;
+}
+
+#links {
+    width: 40%;
+    height: 80%;
+}
+
+#warning{
+    width: 15%;
+    height: 80%;
+}
+
+#footer_logo h1{
+    padding: 20px 0px;
+    font-family: MinecraftRegular;
+    font-size: 20px;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    font-family: MinecraftRegular;
+    font-size: 20px;
+    color: #00a651;
+}
+
+#links{
+    display: flex;
+}
+
+#links h1{
+    padding-top: 20px;
+    font-family: MinecraftReg;
+    letter-spacing: .1rem;
+    font-size: 20px;
+    color: #fff;
+}
+
+#links a{
+    padding-top: 5px;
+}
+
+#links #left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+
+#warning {
+    text-align: right;
+}

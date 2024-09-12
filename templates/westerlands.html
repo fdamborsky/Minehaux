@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lannisport | Houses</title>
+    <link rel="shortcut icon" href="../static/resources/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/westerlands.css">
+</head>
+<body>
+  <div class="loader"></div>
+
+  <main>
+    <a href="{{ url_for('home') }}"><h1>minehaux</h1></a>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('logout') }}"><img src="../static/resources/home/lock.png" alt="">Log Out</a></li>
+        </ul>
+    </nav>
+  </main>
+
+    <div class="wrapper">
+        <div id="header">
+        <div id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            onfocus="this.value=''"
+            placeholder="Search product name here.."
+          />
+          <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">All</button>
+          <button class="button-value" onclick="filterProduct('Apartment')">
+            Apartment
+          </button>
+          <button class="button-value" onclick="filterProduct('Villa')">
+            Villa
+          </button>
+          <button class="button-value" onclick="filterProduct('Cottage')">
+            Cottage
+          </button>
+          <button class="button-value" onclick="filterProduct('Castle')">
+            Castle
+          </button>
+        </div></div>
+        <div id="products"></div>
+      </div>
+
+      <footer>
+        <div id="footer_logo">
+            <img src="../static/resources/home/logos.png" alt="">
+            <h1>@ 2024 Mojang AB. TM Microsoft Corporation.</h1>
+            <a href="https://www.minecraft.net/en-us/usage-guidelines" target="_blank">Minecraft Usage Guidelines</a>
+        </div>
+
+        <div id="links">
+            <div id="left">
+                <h1>GAMES</h1>
+                <a href="https://www.minecraft.net/en-us/about-minecraft">Minecraft</a>
+                <a href="https://www.minecraft.net/en-us/about-dungeons">Minecraft Dungeons</a>
+                <a href="https://www.minecraft.net/en-us/about-legends">Minecraft Legends</a>
+                <a href="https://education.minecraft.net/">Minecraft Education</a>
+                <h1>community</h1>
+                <a href="https://www.minecraft.net/en-us/community">Community</a>
+                <a href="https://www.minecraft.net/en-us/creator">Creator Learning Portal</a>
+                <a href="https://www.minecraft.net/mojang-careers">Mojang Studios Careers</a>
+                <a href="https://minecraft.net/build-a-better-world">Build a Better World</a>
+            </div>
+            <div id="right">
+                <h1>shop</h1>
+                <a href="https://www.minecraft.net/en-us/catalog">Marketplace</a>
+                <a href="https://shop.minecraft.net/">Minecraft Shop</a>
+                <h1>support</h1>
+                <a href="https://www.minecraft.net/minecraft-tips-for-beginners">Tips for Beginners</a>
+                <a href="https://help.minecraft.net/">Help</a>
+                <a href="https://feedback.minecraft.net/">Feedback</a>
+                <a href="https://www.minecraft.net/en-us/sitemap">Site Map</a>
+                <a href="https://www.minecraft.net/en-us/download">Download</a>
+                <a href="https://help.minecraft.net/hc/en-us/articles/4408904068621-Feedback-and-Fan-Mail">Contact us</a>
+                <h1>account</h1>
+                <a href="https://www.minecraft.net/profile">Profile</a>
+                <a href="https://www.minecraft.net/en-us/redeem">Redeem</a>
+            </div>
+        </div>
+        
+        <div id="warning">
+            <img src="../static/resources/home/warning.png" alt="">
+        </div>
+    </footer>
+      <script src="../static/westerlands.js"></script>
+    </body>
+</html>
