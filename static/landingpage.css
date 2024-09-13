@@ -388,7 +388,7 @@ header nav ul li a img{
 
 #properties {
     position: relative;
-    height: 100vh;
+    height: auto;
     background-color: #171615;
     display: flex;
     flex-direction: column;
@@ -401,6 +401,7 @@ header nav ul li a img{
     bottom: 0;
     user-select: none;
     pointer-events: none;
+    width: 19%;
 }
 
 #properties .targaryen{
@@ -409,87 +410,95 @@ header nav ul li a img{
     bottom: 0;
     user-select: none;
     pointer-events: none;
+    width: 19%;
 }
 
 #properties_title{
     text-align: center;
     width: 100%;
-    height: 200px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #properties_title h1{
-    padding-top: 100px;
-    font-size: 40px;
+    font-size: 2vw;
     font-family: MinecraftReg;
     letter-spacing: .1rem;
     color: #fff;
 }
 
 #properties_title h2{
-    padding-top: 10px;
-    font-size: 20px;
+    padding-top: 1vh;
+    font-size: 1vw;
     font-family: MinecraftRegular;
     color: #fff;
 }
 
-
 #cities {
-    margin-top: 50px;
-    height: 70vh;
-    width: auto;
-}
-
-#cities #top{
-    height: 50%;
-    width: 100%;
-    margin-bottom: 10px;
+    height: auto;
+    width: 60vw;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 5vh;
 }
 
-#cities #bottom {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.city_top {
+    margin-bottom: 2%;
 }
 
-#cities img{
-    height: 100%;
-    padding-right: 20px;
-    user-select: none;
-    pointer-events: none;
-}
-
-.image_container{
+.city_image1{
+    width: 33%;
     position: relative;
 }
 
-.text-box {
-    position: absolute;
-    bottom: 10px;
+.city_image2{
+    width: 65%;
+    position: relative;
+}
+
+.city_image1 img, .city_image2 img{
     width: 100%;
-    text-align: center;
+    height: 100%;
 }
 
-.text-box h1{
-    font-size: 30px;
+.city-text{
+    position: absolute;
+    bottom: 1vh;
+    left: 50%;
+    translate: -50%;
+}
+
+.city-text h1{
+    padding-bottom: 1vh;
+    font-size: 1.8vw;
     font-family: MinecraftReg;
-    letter-spacing: .1rem;
     color: #fff;
-    filter: drop-shadow(0 0 5px #000);
+    letter-spacing: .1rem;
+    filter: drop-shadow(0 0 0.9rem black);
+
 }
 
-.text-box h2{
-    font-size: 20px;
+.city-text h2{
+    font-size: 1vw;
     font-family: MinecraftRegular;
     color: #fff;
-    filter: drop-shadow(0 0 5px #000);
+    text-align: center;
+    filter: drop-shadow(0 0 0.9rem black);
+
 }
 
-
+.city_image1 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
 
 /**********WHY CHOSE US**********/
 /**********WHY CHOSE US**********/
@@ -531,7 +540,7 @@ header nav ul li a img{
     top: 5%;
     transform: translateX(-50%);
 
-    width: 55%;
+    padding: 0% 20%;
     height: auto;
 
     display: flex;

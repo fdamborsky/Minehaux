@@ -2,8 +2,8 @@ let products = {
     data: [
       {
         productName: "CrakeHall Fisherman Hut",
-        category: "Apartment",
-        price: "250,000",
+        category: "Cottage",
+        price: "250 GD",
         image: "static/resources/westerlands/crakehall_house.png",
         authorImage: "static/resources/westerlands/crakehall.svg",
         authorText: "House Crakehall",
@@ -12,7 +12,7 @@ let products = {
       {
         productName: "Lannisport Villa",
         category: "Villa",
-        price: "320,000",
+        price: "300 GD",
         image: "static/resources/westerlands/lannisportport_house.png",
         authorImage: "static/resources/westerlands/lannisport.png",
         authorText: "House Lannister of Lannisport",
@@ -20,8 +20,8 @@ let products = {
       },
       {
         productName: "Casterly Tower",
-        category: "Cottage",
-        price: "180,000",
+        category: "Castle",
+        price: "2000 GD",
         image: "static/resources/westerlands/casterlyrock_house.png",
         authorImage: "static/resources/westerlands/lannister.svg",
         authorText: "House Lannister",
@@ -30,7 +30,7 @@ let products = {
       {
         productName: "Ashemark Forge",
         category: "Apartment",
-        price: "500,000",
+        price: "1200 GD",
         image: "static/resources/westerlands/ashemark.png",
         authorImage: "static/resources/westerlands/marbrand.svg",
         authorText: "House Marbrand",
@@ -38,8 +38,8 @@ let products = {
       },
       {
         productName: "Crag Stable",
-        category: "Villa",
-        price: "400,000",
+        category: "Cottage",
+        price: "100 GD",
         image: "static/resources/westerlands/Crag.png",
         authorImage: "static/resources/westerlands/westerlings.webp",
         authorText: "House Westerlings",
@@ -71,7 +71,7 @@ let products = {
     container.appendChild(name);
     //price
     let price = document.createElement("h6");
-    price.innerText = "$" + i.price;
+    price.innerText = i.price;
     container.appendChild(price);
 
     card.appendChild(container);

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/landingpage.css">
+    <link rel="stylesheet" type="text/css" href="../static/landingpage_que.css">
     <link rel="shortcut icon" href="../static/resources/favicon.ico" type="image/x-icon">
     <title>Welcome to the Minehaux</title>
 </head>
@@ -148,43 +149,39 @@
             <h1>find properties in the westeros</h1>
             <h2>Discover Your Ideal Home Across Multiple Locations</h2>
         </div>
-        <div id="cities">
-            <div id="top">
-                <a href="{{ url_for('westerlands') }}">
-                <div class="image_container">
-                    <div class="text-box">
-                        <h1>Westerlands</h1>
-                        <h2>5 Properties</h2>
-                    </div>
-                    <img class="first-image" src="../static/resources/home/Lannisport.png" alt="">
-                </div></a>
-                
-                <div class="image_container">
-                    <div class="text-box">
-                        <h1>Crownlands</h1>
-                        <h2>12 Properties</h2>
-                    </div>
-                    <img src="../static/resources/home/kings landing.png" alt="">
-                </div>
-            </div>
-            <div id="bottom">
-                <div class="image_container">
-                    <div class="text-box">
-                        <h1>Vale</h1>
-                        <h2>3 Properties</h2>
-                    </div>
-                    <img class="first-image" src="../static/resources/home/Gullstown.png" alt="">
-                </div>
 
-                <div class="image_container">
-                    <div class="text-box">
-                        <h1>North</h1>
-                        <h2>7 Properties</h2>
-                    </div>
-                    <img src="../static/resources/home/white_harbour.png" alt="">
-                </div>
+        <div id="cities">
+            <div class="city_image1 city_top">
+                <a href="{{ url_for('westerlands') }}"></a>
+                <img src="../static/resources/home/Lannisport.png" alt="">
+                <div class="city-text">
+                <h1>westerlands</h1>
+                <h2>5 properties</h2></div>
+            </div>
+
+            <div class="city_image2 city_top">
+                <a href="{{ url_for('crownlands') }}"></a>
+                <img src="../static/resources/home/kings landing.png" alt="">
+                <div class="city-text">
+                <h1>crownlands</h1>
+                <h2>12 properties</h2></div>
+            </div>
+
+            <div class="city_image2">
+                <img src="../static/resources/home/Gullstown.png" alt="">
+                <div class="city-text">
+                <h1>vale</h1>
+                <h2>3 properties</h2></div>
+            </div>
+
+            <div class="city_image1">
+                <img src="../static/resources/home/white_harbour.png" alt="">
+                <div class="city-text">
+                <h1>north</h1>
+                <h2>7 properties</h2></div>
             </div>
         </div>
+        
     </div>
 
     <div id="why_choose_us">

@@ -63,9 +63,15 @@ def westerlands():
     #    return redirect(url_for("login"))
     return render_template("westerlands.html")
 
+@app.route("/crownlands")
+def crownlands():
+    #if "user" in session and "password" in session:
+    #    return render_template("home.html")
+    #else:
+    #    return redirect(url_for("login"))
+    return render_template("crownlands.html")
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5000,debug=True,host='0.0.0.0')
