@@ -18,6 +18,17 @@
     src: url("resources/fonts/Minecrafter.Reg.ttf");
 }
 
+:root {
+    font-size: 40px;
+    --clr-1200: 3rem;
+    --clr-800: 2rem;
+    --clr-600: 1.5rem;
+    --clr-500: 1.25rem;
+    --clr-400: 1rem;
+    --clr-200: 0.5rem;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -36,16 +47,18 @@ body{
 /**********HEADER**********/
 
 header {
-    height: 80px;
+    height: 8vh;
     background-color: rgba(38, 36, 35, .5);
     filter: drop-shadow(0 0 0.2rem black);
     position: fixed;
-    width: 100%;
-    top: 0px;
+    top: 0;
+    width: 100vw;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
+    padding: 0px 5vw;
+
     outline: none;
     z-index: 998;
 }
@@ -54,17 +67,22 @@ header h1 {
     display: inline-block;
     font-family: MinecraftBold;
     color: #fff;
-    font-size: 50px;
+    font-size: var(--clr-600);
     cursor: pointer;
     user-select: none;
     pointer-events: none;
     outline: none;
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 header nav ul li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 1.5vw;
     outline: none;
 }
 
@@ -72,13 +90,14 @@ header nav ul li a{
     text-decoration: none;
     color: #fff;
     font-family: MinecraftRegular;
-    font-size: 20px;
+    font-size: var(--clr-200);
     outline: none;
+
 }
 
 header nav ul li a img{
-    height: 20px;
-    padding-right: 10px;
+    height: 2vh;
+    padding-right: 1vw;
     outline: none;
 }
 
@@ -89,53 +108,57 @@ header nav ul li a img{
 
 #landing-page {
     height: 100vh;
-    width: 100vw;
+    width:100%;
     background-image: url("resources/home/bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 #container {
     position: relative;
-    width: 700px;
-    height: 320px;
+    padding: 0 5vw;
+    width: auto;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #container h1{
-    height: 45px;
     text-align: center;
     font-family: MinecraftReg;
-    font-size: 43px;
+    font-size: var(--clr-500);
     color: #fff;
     filter: drop-shadow(0 0 0.9rem black);
     user-select: none;
     pointer-events: none;
     letter-spacing: .1rem;
+    padding-bottom: 2vh;
 }
 
 #container p{
-    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: MinecraftRegular;
-    font-size: 15px;
+    font-size: var(--clr-200);
     color: #fff;
     filter: drop-shadow(0 0 0.9rem black);
     user-select: none;
     pointer-events: none;
+    padding-bottom: 2vh;
 
 }
 
@@ -148,24 +171,27 @@ header nav ul li a img{
 }
 
 .toggle-button {
+    height: 100%;
     border: none;
     background: none;
-    padding: 0px 15px;
+    padding: 0 1vw;
     margin: 0;
     cursor: pointer;
     outline: none;
-
 }
 
 .toggle-button img {
     display: block;
     user-select: none;
     pointer-events: none;
+    height: 100%;
 }
+
+
 
 .search {
     position: relative;
-    height: 100px;
+    height: 10vh;
     width: 300px;
     display: flex;
     align-items: center;
@@ -463,6 +489,7 @@ header nav ul li a img{
 .city_image1 img, .city_image2 img{
     width: 100%;
     height: 100%;
+    
 }
 
 .city-text{

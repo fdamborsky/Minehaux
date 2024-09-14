@@ -2,6 +2,20 @@
     #why_choose_us #boxes_2{
         padding: 0% 15% !important;
     }
+}
 
-    
+@media only screen and (max-width: 1400px){
+    header nav ul li {
+        display: none !important;
+    }
+    header nav ul li:last-child{
+        display: block !important;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    #landing-page {
+        background-attachment: scroll;
+    }
 }
