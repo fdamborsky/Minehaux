@@ -25,7 +25,9 @@
     --clr-600: 1.5rem;
     --clr-500: 1.25rem;
     --clr-400: 1rem;
+    --clr-300: 0.75rem;
     --clr-200: 0.5rem;
+    --clr-100: 0.25rem;
 }
 
 
@@ -67,38 +69,40 @@ header h1 {
     display: inline-block;
     font-family: MinecraftBold;
     color: #fff;
-    font-size: var(--clr-600);
+    font-size:var(--clr-500);
     cursor: pointer;
     user-select: none;
     pointer-events: none;
     outline: none;
 }
 
-header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
 }
 
-header nav ul li{
-    display: inline-block;
-    padding: 0px 1.5vw;
-    outline: none;
-}
-
-header nav ul li a{
-    text-decoration: none;
+nav a {
     color: #fff;
+    text-decoration: none;
+    padding: 0px 1vw;
+    display: block;
+    text-align: center;
+
     font-family: MinecraftRegular;
     font-size: var(--clr-200);
-    outline: none;
-
 }
 
-header nav ul li a img{
-    height: 2vh;
-    padding-right: 1vw;
-    outline: none;
+nav li{
+    float: left;
+}
+
+nav img {
+    height: 20px;
+    padding-right: 10px;
 }
 
 
@@ -159,7 +163,12 @@ header nav ul li a img{
     user-select: none;
     pointer-events: none;
     padding-bottom: 2vh;
+}
 
+a.buttonlink{
+    width: fit-content;
+    height: fit-content;
+    user-select: none;
 }
 
 .toggle-buttons {
@@ -211,6 +220,7 @@ header nav ul li a img{
     user-select: none;
     pointer-events: none;
     width: auto;
+    height: 70%;
 }
 
 .search h3{
@@ -220,8 +230,10 @@ header nav ul li a img{
     outline: none;
     border: none;
     font-family: MinecraftRegular;
-    font-size: 40px;
+    font-size: var(--clr-400);
     color: white;
+    user-select: none;
+
 }
 
 #types {
@@ -237,10 +249,14 @@ header nav ul li a img{
 
 
 #featured {
-    height: 600px;
     width: 100vw;
     background-color: #0b0b0b;
     position: relative;
+    padding-bottom: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #featured #title h1{
@@ -268,21 +284,18 @@ header nav ul li a img{
 
 
 #boxes{
-    position: relative;
-    left: 50%;
     margin-top: 40px;
-
+    width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    transform: translateX(-50%);
-    width: 1100px;
-    height: 400px;
+    flex-wrap: wrap;
 }
 
 .box{
-    width: 30%;
-    height: 100%;
+    width: 330px;
+    height: 400px;
     background-color: #171615;
     border-radius: 30px;
 
@@ -290,7 +303,6 @@ header nav ul li a img{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .box img{
@@ -518,7 +530,7 @@ header nav ul li a img{
 
 }
 
-.city_image1 a{
+.city_image1 a, .city_image2 a{
     position: absolute;
     top: 0;
     left: 0;
@@ -724,6 +736,8 @@ header nav ul li a img{
     text-align: center;
     padding-top: 20px;
     filter: drop-shadow(0 0 0.9rem black);
+    user-select: none;
+    pointer-events: none;
 
 }
 
@@ -735,6 +749,8 @@ header nav ul li a img{
     text-align: center;
     padding-top: 20px;
     filter: drop-shadow(0 0 0.9rem black);
+    user-select: none;
+    pointer-events: none;
 }
 
 #testimonial_boxes {
@@ -770,6 +786,8 @@ header nav ul li a img{
     padding-top: 20px;
     user-select: none;
     pointer-events: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 .testimonial_box h1{
@@ -779,6 +797,8 @@ header nav ul li a img{
     letter-spacing: .1rem;
     text-align: center;
     padding-top: 30px;
+    user-select: none;
+    pointer-events: none;
 }
 
 .testimonial_box h2{
@@ -787,6 +807,8 @@ header nav ul li a img{
     font-size: 30px;
     text-align: center;
     padding-top: 20px;
+    user-select: none;
+    pointer-events: none;
 }
 
 .TBOX1:hover{
